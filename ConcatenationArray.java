@@ -1,0 +1,14 @@
+class Solution {
+    public int[] getConcatenation(int[] nums) {
+        int[] newarr=new int[nums.length*2];
+        for(int i=0;i<nums.length;i++){
+            newarr[i]=nums[i];
+        }
+        int ind=nums.length;
+        for(int i=0;i<nums.length;i++){
+            newarr[ind]=nums[i];
+            ind++;
+        }
+        return newarr;
+    }
+}
